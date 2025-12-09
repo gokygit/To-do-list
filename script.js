@@ -13,20 +13,21 @@ function addTask() {
     const checkIcon = document.createElement('span');
     let text = document.createElement('span');
     let deleteButton = document.createElement('span');
+
     deleteButton.classList.add('remove');
     deleteButton.innerHTML = '\u00d7';
-
     checkIcon.classList.add('unchecked');
     checkIcon.classList.add('toggle');
     text.classList.add('text');
     text.innerHTML = inputBox.value;
+
     li.appendChild(div);
     li.appendChild(deleteButton);
     div.appendChild(checkIcon);
     div.appendChild(text);
-
     listContainer.appendChild(li);
   }
+
   inputBox.value = '';
   saveData();
 }
@@ -56,7 +57,6 @@ listContainer.addEventListener('click', function (e) {
     if (taskText) {
       taskText.classList.toggle('check');
     }
-
     saveData();
   }
 });

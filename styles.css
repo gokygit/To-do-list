@@ -43,7 +43,6 @@ body {
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
-  flex: 1 1 0%;
 }
 
 input {
@@ -108,10 +107,13 @@ ul li .remove:hover {
 ul li div {
   display: flex;
   align-items: center;
+  flex: 1;
 }
+
 span.unchecked {
   background-image: url(images/unchecked.png);
 }
+
 span.checked {
   background-image: url(images/checked.png);
 }
@@ -122,7 +124,6 @@ span.checked {
   height: 20px;
   width: 20px;
   display: inline-block;
-  margin-right: 10px;
   flex-shrink: 0;
 }
 
